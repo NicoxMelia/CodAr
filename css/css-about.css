@@ -1,0 +1,20 @@
+body{
+    background-color: #d7f1f6;
+}
+
+.person-pic{
+    width: 100%;
+    max-width: 275px;
+    height: auto;
+    max-height: 275px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.row-sombr{
+    border: 1px solid #ddd; /* Borde sutil y moderno de 1px */
+    border-radius: 10px; /* Bordes ligeramente redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombras múltiples y suaves */
+    transition: box-shadow 0.3s ease; /* Suaviza el cambio de sombra al pasar el ratón */
+    padding: 20px; /* Añade un poco de espacio interno */
+  }
