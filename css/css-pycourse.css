@@ -25,3 +25,8 @@ img:first-of-type{
     transition: box-shadow 0.3s ease; /* Suaviza el cambio de sombra al pasar el ratón */
     padding: 20px; /* Añade un poco de espacio interno */
   }
+
+  button:first-of-type{
+    width: fit-content;
+    align-self: center;
+  }
