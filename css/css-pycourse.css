@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: #d7f1f6;
+    font-family: kanit;
+    padding: 0%;
+}
+
+#first-view{
+    background-image: url("../assets/img/python3.png");
+    background-size: cover;
+  /*  height: 75vh;*/
+  padding-bottom: 5vh;
+}
+
+img:first-of-type{
+    width: 10vw;
+    align-self: center;
+}
+
+.row-sombr{
+    border: 1px solid #ddd; /* Borde sutil y moderno de 1px */
+    border-radius: 10px; /* Bordes ligeramente redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombras múltiples y suaves */
+    transition: box-shadow 0.3s ease; /* Suaviza el cambio de sombra al pasar el ratón */
+    padding: 20px; /* Añade un poco de espacio interno */
+  }
