@@ -9,7 +9,8 @@ body{
 #first-view{
     background-image: url("../assets/img/python3.png");
     background-size: cover;
-    height: 75vh;
+  /*  height: 75vh;*/
+  padding-bottom: 5vh;
 }
 
 img:first-of-type{
