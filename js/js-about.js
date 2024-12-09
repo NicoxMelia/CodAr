@@ -1,3 +1,6 @@
+import { teamMembers } from "./team-members.js";
+
+
 AOS.init();
 
 function updateFavicon() {
@@ -14,3 +17,20 @@ function updateFavicon() {
 
 
 window.addEventListener('load', updateFavicon);
+
+const membersContainer = document.getElementById("members");
+
+teamMembers.forEach(member => {
+  const card = `
+    <br>
+    <div id="${member.nick}-box" class="row bg-white row-sombr" data-aos="fade-right" data-aos-duration="3000">
+        <div class="col-sm-auto">
+            <img src="${member.img}" class="person-pic">
+        </div>
+        <div class="col m-4 align-content-center">
+            <p class="lead">${member.bio}</p>
+        </div>
+    </div>
+    <br>`;
+  membersContainer.innerHTML += card;
+});
