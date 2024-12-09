@@ -4,7 +4,7 @@ const teamMembers = [
         nick: "nico",
         role: "Profe",
         img: "../assets/img/niko2.png",
-        bio: "---"
+        bio: "Hola soy Nico!, profe de CodAr"
     },
     { 
         name: "Matilde Tolosa",
