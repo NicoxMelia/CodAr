@@ -3,6 +3,7 @@
 body{
     background-color: #d7f1f6;
     font-family: kanit;
+    padding: 0%;
 }
 
 #first-view{
@@ -11,6 +12,7 @@ body{
 
 h1:first-of-type{
     margin-top: 5vh;
+    text-align: center;
 }
 
 .person-pic{
