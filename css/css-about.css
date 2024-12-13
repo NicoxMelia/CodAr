@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Questrial&display=swap');
 
 body{
-    background-image: linear-gradient(to right top, #ffffff, #e2e3ef, #c0c9e0, #9ab1d0, #6d9ac0, #538ab1, #367aa3, #006a94, #005c85, #014e77, #014168, #003459);    font-family: kanit;
+    background-image: linear-gradient(to right top, #ffffff, #e2e3ef, #c0c9e0, #9ab1d0, #6d9ac0, #538ab1, #367aa3, #006a94, #005c85, #014e77, #014168, #003459);
+    font-family: kanit;
     padding: 0%;
 }
 
