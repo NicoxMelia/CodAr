@@ -1,20 +1,20 @@
 import {courses} from './json-courses.js';
 
-function makeDesktopItem(itemClass, itemImgSrc, itemName, itemUrl){
+function makeDesktopItem(itemType, item){
     var itemContainer = document.createElement('a');
-    itemContainer.href = itemUrl;
-    itemContainer.classList.add('item-container');
-    itemContainer.classList.add(itemClass);
+    itemContainer.href = item.url;
+    itemContainer.classList.add(itemType);
+    itemContainer.classList.add(item.class);
     var itemTop = document.createElement('div');
-    itemTop.classList.add('item-top');
+    itemTop.classList.add('item-img-container');
     var itemBottom = document.createElement('div');
-    itemBottom.classList.add('item-bottom');
+    itemBottom.classList.add('item-name-container');
     var itemImg = document.createElement('img');
     itemImg.classList.add('item-img');
     var itemTitle = document.createElement('h5');
     itemTitle.classList.add('item-title');
-    itemTitle.innerHTML = itemName;
-    itemImg.src = itemImgSrc;
+    itemTitle.innerHTML = item.name;
+    itemImg.src = item.icon;
     itemTop.appendChild(itemImg);
     itemBottom.appendChild(itemTitle);
     itemContainer.appendChild(itemTop);
@@ -24,12 +24,12 @@ function makeDesktopItem(itemClass, itemImgSrc, itemName, itemUrl){
     
 }
 
-function makeDesktopList(){
+function makeList(itemType){
     var container = document.createElement('div');
     container.classList.add('courses-container');
     document.querySelector('.courses-section').appendChild(container);
     for(var item of courses){
-        var itemContainer = makeDesktopItem(item.class, item.icon, item.name, item.url);
+        var itemContainer = makeDesktopItem(itemType, item);
         document.querySelector('.courses-container').appendChild(itemContainer);
     }
 }
@@ -38,6 +38,10 @@ function makeDesktopList(){
 
 window.addEventListener('load', function() {
     //this.document.querySelector('.courses-section').appendChild(makeDesktopItem("item-python", "../assets/icons/python-icon.png", "PYTHON ADOLESCENTES"));
-    makeDesktopList();
+    if(this.window.innerWidth < 660){
+        makeList("item-container-mobile");
+    }else{
+        makeList("item-container-desktop");
+    }
 });
 
