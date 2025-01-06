@@ -14,4 +14,19 @@ var courses = [
 
 ];
 
-export{courses};
+var know = [
+    {
+        name: "Quienes somos",
+        icon: "../assets/icons/python-icon.png",
+        class: "item-about-us",
+        url:"#"
+    },
+    {
+        name: "Clase de prueba",
+        icon: "../assets/icons/python-icon.png",
+        class: "item-trial-class",
+        url:"#"
+    }
+];
+
+export{courses, know};
