@@ -195,6 +195,14 @@ article{
     background-color: #003459;
 }
 
+.item-wp .item-name-container{
+    background-color: #23b33a;
+}
+
+.item-ig .item-name-container{
+    background-color: #dc2b7c;
+}
+
 @media(max-width: 470px){
 
     .item-container-mobile .item-img-container{

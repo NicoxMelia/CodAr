@@ -1,4 +1,4 @@
-import {courses, know} from './json-courses.js';
+import {courses, know, contact} from './json-courses.js';
 
 function makeItem(itemType, item){
     var itemContainer = document.createElement('a');
@@ -41,9 +41,11 @@ window.addEventListener('load', function() {
     if(this.window.innerWidth < 660){
         makeList("item-container-mobile", "courses", courses);
         makeList("item-container-mobile", "know", know);
+        makeList("item-container-mobile", "contact", contact);
     }else{
         makeList("item-container-desktop", "courses", courses);
         makeList("item-container-desktop", "know", know);
+        makeList("item-container-desktop", "contact", contact);
     }
 });
 

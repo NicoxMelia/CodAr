@@ -41,4 +41,19 @@ var know = [
     }
 ];
 
-export{courses, know};
+var contact = [
+    {
+        name: "WhatsApp",
+        icon: "../assets/icons/icon-wp.svg",
+        class: "item-wp",
+        url: "#"
+    },
+    {
+        name: "Instagram",
+        icon: "../assets/icons/icon-ig.png",
+        class: "item-ig",
+        url: "#"
+    }
+]
+
+export{courses, know, contact};
