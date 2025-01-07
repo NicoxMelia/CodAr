@@ -54,7 +54,7 @@ body{
     font-weight: 300;
 }
 
-.header a{
+a{
     text-decoration: none;
 }
 
@@ -103,8 +103,8 @@ article{
 }
 
 .item-container-desktop img{
-    width: 160x;
-    height: 160px;
+    width: 100px;
+    height: auto;
 }
 
 .item-container-mobile img{
@@ -175,8 +175,24 @@ article{
     opacity: 0.8;
 }
 
+.item-prog-kids .item-name-container{
+    background-color: #f9a31e;
+}
+
 .item-python .item-name-container{
     background-color: #ffe052;
+}
+
+.item-java .item-name-container{
+    background-color: #f9991d;
+}
+
+.item-trial-class .item-name-container{
+    background-color: #007EA7;
+}
+
+.item-about-us .item-name-container{
+    background-color: #003459;
 }
 
 @media(max-width: 470px){

@@ -1,14 +1,26 @@
 var courses = [
     {
-        name: "PYTHON NIÑOS",
-        icon: "../assets/icons/python-icon.png",
-        class: "item-python",
+        name: "PROGRAMACION PARA NIÑOS",
+        icon: "../assets/icons/icon-scratch.png",
+        class: "item-prog-kids",
         url:"#"
     },
     {
         name: "PYTHON ADOLESCENTES",
-        icon: "../assets/icons/python-icon.png",
+        icon: "../assets/icons/icon-python.png",
         class: "item-python",
+        url:"#"
+    },
+    {
+        name: "PYTHON JOVENES",
+        icon: "../assets/icons/icon-python.png",
+        class: "item-python",
+        url:"#"
+    },
+    {
+        name: "JAVA",
+        icon: "../assets/icons/icon-java.png",
+        class: "item-java",
         url:"#"
     }
 
@@ -17,13 +29,13 @@ var courses = [
 var know = [
     {
         name: "Quienes somos",
-        icon: "../assets/icons/python-icon.png",
+        icon: "../assets/icons/logo-negro.png",
         class: "item-about-us",
         url:"#"
     },
     {
         name: "Clase de prueba",
-        icon: "../assets/icons/python-icon.png",
+        icon: "../assets/icons/logo-negro.png",
         class: "item-trial-class",
         url:"#"
     }
