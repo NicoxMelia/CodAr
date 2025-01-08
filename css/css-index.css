@@ -96,7 +96,7 @@ article{
 }
 
 .item-container-mobile{
-    width: 60vw;
+    width: 75vw;   /* 60vw */
     height: 15vh;
     display: flex;
     margin-bottom: 50px;
@@ -168,7 +168,7 @@ article{
 }
 
 .item-container-mobile h5{
-    font-weight: 600;
+    font-weight: 700;   /*600*/
     font-size: 3vw;
     margin: 0;
     color: black;
