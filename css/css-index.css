@@ -54,12 +54,12 @@ body{
     font-weight: 300;
 }
 
-.header a{
+a{
     text-decoration: none;
 }
 
-.courses-section{
-    height: 100vh;
+section{
+    height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -67,7 +67,7 @@ body{
     padding-top: 10vh;
 }
 
-.courses-section h1{
+section h1{
     font-family: "raleway";
     font-weight: 300;
     color: #272222;
@@ -75,7 +75,7 @@ body{
     margin-bottom: 5%;
 }
 
-.courses-container{
+article{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -96,15 +96,15 @@ body{
 }
 
 .item-container-mobile{
-    width: 60vw;
+    width: 75vw;   /* 60vw */
     height: 15vh;
     display: flex;
     margin-bottom: 50px;
 }
 
 .item-container-desktop img{
-    width: 160x;
-    height: 160px;
+    width: 100px;
+    height: auto;
 }
 
 .item-container-mobile img{
@@ -168,15 +168,39 @@ body{
 }
 
 .item-container-mobile h5{
-    font-weight: 600;
+    font-weight: 700;   /*600*/
     font-size: 3vw;
     margin: 0;
     color: black;
     opacity: 0.8;
 }
 
+.item-prog-kids .item-name-container{
+    background-color: #f9a31e;
+}
+
 .item-python .item-name-container{
     background-color: #ffe052;
+}
+
+.item-java .item-name-container{
+    background-color: #f9991d;
+}
+
+.item-trial-class .item-name-container{
+    background-color: #007EA7;
+}
+
+.item-about-us .item-name-container{
+    background-color: #003459;
+}
+
+.item-wp .item-name-container{
+    background-color: #23b33a;
+}
+
+.item-ig .item-name-container{
+    background-color: #dc2b7c;
 }
 
 @media(max-width: 470px){

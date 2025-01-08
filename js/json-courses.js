@@ -1,17 +1,59 @@
 var courses = [
     {
-        name: "PYTHON NIÑOS",
-        icon: "../assets/icons/python-icon.png",
-        class: "item-python",
+        name: "PROGRAMACION PARA NIÑOS",
+        icon: "../assets/icons/icon-scratch.png",
+        class: "item-prog-kids",
         url:"#"
     },
     {
         name: "PYTHON ADOLESCENTES",
-        icon: "../assets/icons/python-icon.png",
+        icon: "../assets/icons/icon-python.png",
         class: "item-python",
+        url:"#"
+    },
+    {
+        name: "PYTHON JOVENES",
+        icon: "../assets/icons/icon-python.png",
+        class: "item-python",
+        url:"#"
+    },
+    {
+        name: "JAVA",
+        icon: "../assets/icons/icon-java.png",
+        class: "item-java",
         url:"#"
     }
 
 ];
 
-export{courses};
+var know = [
+    {
+        name: "Quienes somos",
+        icon: "../assets/icons/logo-negro.png",
+        class: "item-about-us",
+        url:"#"
+    },
+    {
+        name: "Clase de prueba",
+        icon: "../assets/icons/logo-negro.png",
+        class: "item-trial-class",
+        url:"#"
+    }
+];
+
+var contact = [
+    {
+        name: "WhatsApp",
+        icon: "../assets/icons/icon-wp.svg",
+        class: "item-wp",
+        url: "#"
+    },
+    {
+        name: "Instagram",
+        icon: "../assets/icons/icon-ig.png",
+        class: "item-ig",
+        url: "#"
+    }
+]
+
+export{courses, know, contact};
