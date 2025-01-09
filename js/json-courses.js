@@ -90,13 +90,13 @@ var contact = [
         name: "WhatsApp",
         icon: "../assets/icons/icon-wp.svg",
         class: "item-wp",
-        url: "#"
+        url: "http://wa.me/+5493512445290"
     },
     {
         name: "Instagram",
         icon: "../assets/icons/icon-ig.png",
         class: "item-ig",
-        url: "#"
+        url: "https://www.instagram.com/codigo.argentino/"
     }
 ]
 
