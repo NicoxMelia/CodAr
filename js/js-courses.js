@@ -2,7 +2,7 @@ import {courses, know, contact} from './json-courses.js';
 
 function makeItem(itemType, item){
     var itemContainer = document.createElement('a');
-    itemContainer.href = item.url;
+    //itemContainer.href = item.url;
     itemContainer.classList.add(itemType);
     itemContainer.classList.add(item.class);
     var itemTop = document.createElement('div');
@@ -30,6 +30,7 @@ function makeList(itemType, parent, itemsList){
     document.querySelector('.' + parent + '-section').appendChild(container);
     for(var item of itemsList){
         var itemContainer = makeItem(itemType, item);
+        itemContainer.href = item.url;
         document.querySelector('.' + parent + '-container').appendChild(itemContainer);
     }
 }
@@ -49,3 +50,4 @@ window.addEventListener('load', function() {
     }
 });
 
+export{makeItem};
