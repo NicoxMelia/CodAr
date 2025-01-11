@@ -63,6 +63,8 @@ h5{
 
     .item-container-mobile{
         margin: 0%;
+        scale: 1.2;
+        text-decoration: none;
     }
 
     .img-container{
@@ -72,8 +74,13 @@ h5{
     }
 
     .desc-container{
-        width: 75vw;
+        width: 90vw;
         padding-top: 5vh;
-        margin-top: 1vh;
+        margin-top: 3vh;
+        font-size: 3.9vw;
+    }
+
+    h5{
+        font-size: 3.9vw;
     }
 }

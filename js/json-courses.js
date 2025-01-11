@@ -4,16 +4,16 @@ var courses = [
         icon: "../assets/icons/icon-scratch.png",
         class: "item-prog-kids",
         url:"./pages/course.html?course=prog-kids",
-        description: "sarasa",
+        description: "Aprender a programar desde una temprana edad ofrece una gran cantidad de beneficios que van más allá de simplemente preparar a los niños para un futuro. En nuestro de curso de programación en videojuegos los niños descubrirán el mundo de la programación de una manera divertida y aprenderán los conceptos básicos utilizando bloques secuenciales.",
         courseRequirements: {
-            "Edad requerida": "5",
-            "Duracion del curso": "iiii",
-            "Duracion de las clases": "ffff",
-            "Conocimientos previos": "gggg"
+            "Edad requerida": "4 a 11 años",
+            "Duracion del curso": "12 clases",
+            "Conocimientos previos": "no se requiere"
         },
         technicalRequirements: {
             req1: "Buena conexión a internet",
             req2: "Computadora con Windows 10 o superior / Linux / MacOS",
+            req3: "Procesador Intel Core i3 o superior"
         }
     },
     {
@@ -25,7 +25,6 @@ var courses = [
         courseRequirements: {
             "Edad requerida": "12 a 16 años",
             "Duracion del curso": "2 clases por semana (8 clases)",
-            "Duracion de las clases": "1 hora y media",
             "Conocimientos previos": "no es necesario"
         },
         technicalRequirements: {
@@ -42,7 +41,6 @@ var courses = [
         courseRequirements: {
             "Edad requerida": "+17 años",
             "Duracion del curso": "2 clases por semana (8 clases)",
-            "Duracion de las clases": "1 hora y media",
             "Conocimientos previos": "no es necesario"
         },
         technicalRequirements: {
@@ -59,7 +57,6 @@ var courses = [
         courseRequirements: {
             "Edad requerida": "5",
             "Duracion del curso": "iiii",
-            "Duracion de las clases": "ffff",
             "Conocimientos previos": "gggg"
         },
         technicalRequirements: {
@@ -75,13 +72,13 @@ var know = [
         name: "Quienes somos",
         icon: "../assets/icons/logo-negro.png",
         class: "item-about-us",
-        url:"#"
+        url:"./pages/about.html"
     },
     {
         name: "Clase de prueba",
         icon: "../assets/icons/logo-negro.png",
         class: "item-trial-class",
-        url:"#"
+        url:"https://forms.gle/xU6pv32LsDhBJw8t8"
     }
 ];
 

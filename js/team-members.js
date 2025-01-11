@@ -11,7 +11,7 @@ const teamMembers = [
         nick: "ale",
         role: "Fundador y Asesor Educativo",
         img: "../assets/img/alejo.png",
-        bio: "Alejo Vazquez, fundador y asesor educativo"
+        bio: "Alejo Vazquez, Fundador y Asesor Educativo"
     },
     { 
         name: "Erika González",
@@ -26,7 +26,15 @@ const teamMembers = [
         role: "Profe",
         img: "../assets/img/niko2.png",
         bio: "Profe y Web Developer"
+    },
+    {
+        name: "Estefano Capoferri",
+        nick: "estefano",
+        role: "Profe",
+        img: "../assets/img/estefan.png",
+        bio: "Profe y Asesor Educativo"
     }
+
   ];
   
   export{teamMembers};
