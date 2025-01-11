@@ -13,8 +13,6 @@ var description = document.querySelector('#description');
 var ulCourseReq = document.querySelector('#courseReq');
 var ulTechReq = document.querySelector('#techReq');
 
-description.innerText = course.description;
-
 for(var req in course.courseRequirements){
     var li = document.createElement('li');
     li.innerText = req + ': ' + course.courseRequirements[req];
@@ -25,6 +23,25 @@ for(var req in course.technicalRequirements){
     var li = document.createElement('li');
     li.innerText = course.technicalRequirements[req];
     ulTechReq.appendChild(li);
+}
+
+for(var key in course.description){
+    if(typeof(course.description[key]) == 'string'){
+        var h5 = document.createElement('h5');
+        h5.innerText = course.description[key];
+        description.appendChild(h5);
+    }else{
+        var title = document.createElement('h5');
+        title.innerText = course.description[key].title;
+        description.appendChild(title);
+        var ul = document.createElement('ul');
+        course.description[key].items.forEach(item => {
+            var li = document.createElement('li');
+            li.innerText = item;
+            ul.appendChild(li);
+        });
+        description.appendChild(ul);
+    }
 }
 
 

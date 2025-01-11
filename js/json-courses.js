@@ -4,7 +4,7 @@ var courses = [
         icon: "../assets/icons/icon-scratch.png",
         class: "item-prog-kids",
         url:"./pages/course.html?course=prog-kids",
-        description: "Aprender a programar desde una temprana edad ofrece una gran cantidad de beneficios que van más allá de simplemente preparar a los niños para un futuro. En nuestro de curso de programación en videojuegos los niños descubrirán el mundo de la programación de una manera divertida y aprenderán los conceptos básicos utilizando bloques secuenciales.",
+       // description: "Aprender a programar desde una temprana edad ofrece una gran cantidad de beneficios que van más allá de simplemente preparar a los niños para un futuro. En nuestro de curso de programación en videojuegos los niños descubrirán el mundo de la programación de una manera divertida y aprenderán los conceptos básicos utilizando bloques secuenciales.",
         courseRequirements: {
             "Edad requerida": "4 a 11 años",
             "Duracion del curso": "12 clases",
@@ -14,6 +14,19 @@ var courses = [
             req1: "Buena conexión a internet",
             req2: "Computadora con Windows 10 o superior / Linux / MacOS",
             req3: "Procesador Intel Core i3 o superior"
+        },
+        description: {
+            p1: "Aprender a programar desde una temprana edad ofrece una gran cantidad de beneficios que van más allá de simplemente preparar a los niños para un futuro.",
+            p2: "En nuestro de curso de programación en videojuegos los niños descubrirán el mundo de la programación de una manera divertida y aprenderán los conceptos básicos utilizando bloques secuenciales.",
+            arr: {
+                title: "Beneficios cognitivos y de desarrollo:",
+                items: [
+                    "Pensamiento lógico y resolución de problemas",
+                    "Creatividad",
+                    "Perseverancia",
+                    "Colaboración"
+                ]
+            }
         }
     },
     {
