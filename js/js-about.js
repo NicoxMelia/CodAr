@@ -28,7 +28,7 @@ teamMembers.forEach(member => {
             <img src="${member.img}" class="person-pic">
         </div>
         <div class="col m-4 align-content-center">
-            <p class="lead">${member.bio}</p>
+            <p class="lead">${member.name + ": " + member.role}</p>
         </div>
     </div>
     <br>`;

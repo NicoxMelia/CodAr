@@ -9,16 +9,26 @@
 </head>
 <body>
 
-    <div class="container-fluid">
-        <div class="header">
-            <div class="header-content d-flex">
-                <a href="#"><h5>Conocenos</h5></a>
-                <a href="#"><h5>Clase de prueba</h5></a>
-                <img src="./assets/icons/logo-blanco.png" class="main-icon">
-            </div>
+    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+        <div class="bg-blue p-4 d-flex align-items-center flex-column">
+          <h5 class="text-body-emphasis h4">Inicio</h5>
+          <h5 class="text-body-emphasis h4">Conocenos</h5>
+          <h5 class="text-body-emphasis h4">Cursos</h5>
+          <h5 class="text-body-emphasis h4">Clase de prueba</h5>
+          <h5 class="text-body-emphasis h4">Contactanos</h5>
         </div>
-    
-    </div>
+      </div>
+      <nav class="navbar navbar-dark bg-blue">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="logo d-flex align-items-end justify-content-center">
+        <a id="btn-trial" href="" class="btn btn-primary">Clase de prueba</a>
+      </div>
 
     <section class="know-section container">
         <h1>Conocenos</h1>
