@@ -82,28 +82,22 @@ var courses = [
 
 var know = [
     {
-        name: "Quienes somos",
+        name: "QUIENES SOMOS",
         icon: "../assets/icons/logo-negro.png",
         class: "item-about-us",
         url:"./pages/about.html"
-    },
-    {
-        name: "Clase de prueba",
-        icon: "../assets/icons/logo-negro.png",
-        class: "item-trial-class",
-        url:"https://forms.gle/xU6pv32LsDhBJw8t8"
     }
 ];
 
 var contact = [
     {
-        name: "WhatsApp",
+        name: "WHATSAPP",
         icon: "../assets/icons/icon-wp.svg",
         class: "item-wp",
         url: "http://wa.me/+5493512445290"
     },
     {
-        name: "Instagram",
+        name: "INSTAGRAM",
         icon: "../assets/icons/icon-ig.png",
         class: "item-ig",
         url: "https://www.instagram.com/codigo.argentino/"

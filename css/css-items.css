@@ -47,6 +47,10 @@ article{
     height: auto;
 }
 
+.item-container-desktop h5{
+    color: white;
+}
+
 .item-container-mobile img{
     width: 15vw;
     max-width: 82px;
@@ -115,7 +119,7 @@ article{
     opacity: 0.8;
 }
 
-.item-prog-kids .item-name-container{
+/* .item-prog-kids .item-name-container{
     background-color: #f9a31e;
 }
 
@@ -125,22 +129,32 @@ article{
 
 .item-java .item-name-container{
     background-color: #f9991d;
+} */
+
+.courses-section .item-name-container{
+    background-color: #003459;
 }
 
-.item-trial-class .item-name-container{
-    background-color: #007EA7;
+.item-name-container h5{
+    color: white;
 }
+
 
 .item-about-us .item-name-container{
     background-color: #003459;
 }
 
+.item-about-us .item-title{
+    color: white;
+}
+
+
 .item-wp .item-name-container{
-    background-color: #23b33a;
+    background-color: #003459;
 }
 
 .item-ig .item-name-container{
-    background-color: #dc2b7c;
+    background-color: #003459;
 }
 
 @media(max-width: 470px){

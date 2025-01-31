@@ -28,13 +28,30 @@ h5{
 
 .logo{
     width: 100vw;
-    height: 100vh;
-    background-image: url("../assets/img/logo-marca.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+    height: calc(fit-content + 10vh);
     background-color: white;
-    background-position: center;
     padding-bottom: 20vh;
+    flex-direction: column;
+}
+
+.logoContainer{
+    width: 100vw;
+    height: auto;
+    background-color: #011e35;
+    display: flex;
+    justify-content: center;
+}
+
+#logo{
+    width: 90vw;
+    height: auto;
+}
+
+#iconoCentral{
+    width: 70vw;
+    height: auto;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
 }
 
 #btn-trial{
@@ -82,4 +99,14 @@ h5{
 
 a{
     text-decoration: none;
+}
+
+@media (min-width: 470px){
+    #iconoCentral{
+        display: none;
+    }
+
+    #btn-trial{
+        
+    }
 }
