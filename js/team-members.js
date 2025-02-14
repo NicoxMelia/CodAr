@@ -5,12 +5,6 @@ const teamMembers = [
         role: "Fundadora, Directora Ejecutiva y Profesora",
         img: "../assets/img/matu.png"
     },
-    { 
-        name: "Alejo Vazquez",
-        nick: "ale",
-        role: "Fundador y Asesor Educativo",
-        img: "../assets/img/alejo.png"
-    },
     {
         name: "Nicolás Melia",
         nick: "nico",
