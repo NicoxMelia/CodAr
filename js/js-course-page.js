@@ -46,8 +46,8 @@ for(var key in course.description){
 
 
 
-if(window.innerWidth < 660){
+/*if(window.innerWidth < 660){
    imgCont.appendChild(makeItem("item-container-mobile", course));
 }else{
     imgCont.appendChild(makeItem("item-container-desktop", course));
-}
+}*/

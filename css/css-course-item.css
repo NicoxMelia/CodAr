@@ -7,6 +7,7 @@ body{
     margin: 0;
     user-select: none;
     overflow-x: hidden;
+    font-family: "raleway";
 }
 
 .course-container{
@@ -18,16 +19,6 @@ body{
     flex-wrap: wrap;
 }
 
-
-.item-container-desktop{
-    width: 35vw;
-    height: 75vh;
-    margin: 0%;
-}
-
-.item-container-desktop h5{
-    font-size: 3vw;
-}
 
 .desc-container{
     background-color: #d0d6d9;
@@ -45,6 +36,10 @@ body{
     height: fit-content;
 }
 
+.btn{
+    margin-bottom: 25px;
+}
+
 h5{
     font-size: 1.4vw;
 }
@@ -57,18 +52,6 @@ h5{
 @media(max-width: 470px){
     .row{
         flex-direction: column;
-    }
-
-    .item-container-mobile{
-        margin: 0%;
-        scale: 1.2;
-        text-decoration: none;
-    }
-
-    .img-container{
-        width: 100vw;
-        display: flex;
-        justify-content: center;
     }
 
     .desc-container{

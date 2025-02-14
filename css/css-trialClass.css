@@ -9,6 +9,7 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: kanit;
 }
 
 body {
@@ -45,4 +46,8 @@ body {
     font-size: 1.2em;
     width: fit-content;
     align-self: center;
+}
+
+#btn-box a{
+    margin-bottom: 10px;
 }
