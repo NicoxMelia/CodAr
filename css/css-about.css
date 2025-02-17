@@ -1,28 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Questrial&display=swap');
 
 body{
-    background-color: #d7f1f6;
+    background-image: linear-gradient(to right top, #ffffff, #e2e3ef, #c0c9e0, #9ab1d0, #6d9ac0, #538ab1, #367aa3, #006a94, #005c85, #014e77, #014168, #003459);
     font-family: kanit;
     padding: 0%;
 }
 
 #first-view{
-    height: 80vh;
+    height: fit-content;
 }
 
 h1:first-of-type{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
     margin-top: 5vh;
     text-align: center;
 }
 
-.person-pic{
-    width: 100%;
-    max-width: 275px;
-    height: auto;
-    max-height: 275px;
-    object-fit: cover;
-    border-radius: 50%;
-}
 
 .row-sombr{
     border: 1px solid #ddd; /* Borde sutil y moderno de 1px */
@@ -31,3 +26,36 @@ h1:first-of-type{
     transition: box-shadow 0.3s ease; /* Suaviza el cambio de sombra al pasar el ratón */
     padding: 20px; /* Añade un poco de espacio interno */
   }
+
+#first-view p{
+    font-size: 1.3em;
+    justify-self: center;
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+}
+
+@media(max-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
+@media(min-width: 768px){
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;        
+    }
+    .card{
+        margin-top: 50px;
+        margin-right: 30px;
+        margin-bottom: 50px;
+    }
+}
