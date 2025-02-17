@@ -24,45 +24,7 @@ article{
     align-items: center;
 }
 
-.item-container-desktop{
-    /*width: 20vw;
-    height: 40vh;*/
-    width: 200px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-    text-decoration: none;
-}
 
-.item-container-mobile{
-    width: 75vw;   /* 60vw */
-    height: 15vh;
-    display: flex;
-    margin-bottom: 50px;
-}
-
-.item-container-desktop img{
-    width: 100px;
-    height: auto;
-}
-
-.item-container-desktop h5{
-    color: white;
-}
-
-.item-container-mobile img{
-    width: 15vw;
-    max-width: 82px;
-    height: auto;
-}
-
-.item-container-desktop .item-img-container{
-    width: 100%;
-    height: 75%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
 
 .item-img-container{
     display: flex; 
@@ -71,21 +33,6 @@ article{
     background-color: #d0d6d9;
 }
 
-.item-container-mobile .item-img-container{
-    width: 25vw;
-    height: 100%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-
-}
-
-.item-container-desktop .item-name-container{
-    width: 100%;
-    height: 25%;
-    /*background-color: #ffe052;*/ /* its only for an item python*/
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-} /*this is an ex item-python class*/
 
 .item-name-container{
     display: flex;
@@ -95,85 +42,99 @@ article{
     text-align: center;
 }
 
-.item-container-mobile .item-name-container{
-    flex-grow: 1;
-    height: 100%;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
 /* new viewport at 470px or 660px width screen*/
 
-.item-container-desktop .item-name-container h5{
-    font-weight: 600;
-    margin: 0;
-    color: black;
-    opacity: 0.8;
-}
 
-.item-container-mobile h5{
-    font-weight: 700;   /*600*/
-    font-size: 3vw;
-    margin: 0;
-    color: black;
-    opacity: 0.8;
-}
-
-/* .item-prog-kids .item-name-container{
-    background-color: #f9a31e;
-}
-
-.item-python .item-name-container{
-    background-color: #ffe052;
-}
-
-.item-java .item-name-container{
-    background-color: #f9991d;
-} */
-
-.courses-section .item-name-container{
+.item-name-container{
     background-color: #003459;
 }
 
-.item-name-container h5{
+.item-title{
     color: white;
 }
 
-
-.item-about-us .item-name-container{
-    background-color: #003459;
+.item h5{
+    font-weight: 700;
+    margin: 0;
 }
 
-.item-about-us .item-title{
-    color: white;
-}
+@media(max-width: 800px){
 
+    /* MOBILE VERSION */
 
-.item-wp .item-name-container{
-    background-color: #003459;
-}
-
-.item-ig .item-name-container{
-    background-color: #003459;
-}
-
-@media(max-width: 470px){
-
-    .item-container-mobile .item-img-container{
-        width: 20vw;  /*30*/
+    .item{
+        width: 75vw;   /* 60vw */
+        height: 15vh;
+        display: flex;
+        margin-bottom: 50px;
     }
 
-    .item-container-mobile img{
-        width: 10vw;
+    .item img{
+        width: 15vw;
+        max-width: 82px;
         height: auto;
     }
 
-    .item-container-mobile h5{
+    .item .item-img-container{
+        width: 25vw;
+        height: 100%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    
+    }
+
+    .item .item-name-container{
+        flex-grow: 1;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .item h5{
+       /* font-weight: 700;  */ /*600*/
         font-size: 3vw;
+        /*margin: 0;*/
+        /*opacity: 0.8;*/
     }
 
-    .item-container-mobile{
-        height: 10vh;
+
+}
+
+@media(min-width: 800px){
+    /* DESKTOP VERSION */
+
+    .item{
+        width: 200px;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+        text-decoration: none;
+    }
+    
+    .item img{
+        width: 100px;
+        height: auto;
+    }
+    
+    .item .item-img-container{
+        width: 100%;
+        height: 75%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    
+    .item .item-name-container{
+        width: 100%;
+        height: 25%;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
     }
 
+
+    .item-container-desktop .item-name-container h5{
+        font-weight: 600;
+        margin: 0;
+        opacity: 0.8;
+    }
 }

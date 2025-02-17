@@ -2,9 +2,7 @@ var courses = [
     {
         name: "PROGRAMACION PARA NIÑOS",
         icon: "../assets/icons/icon-scratch.png",
-        class: "item-prog-kids",
         url:"./pages/course.html?course=prog-kids",
-       // description: "Aprender a programar desde una temprana edad ofrece una gran cantidad de beneficios que van más allá de simplemente preparar a los niños para un futuro. En nuestro de curso de programación en videojuegos los niños descubrirán el mundo de la programación de una manera divertida y aprenderán los conceptos básicos utilizando bloques secuenciales.",
         courseRequirements: {
             "Edad requerida": "4 a 11 años",
             "Duracion del curso": "12 clases",
@@ -32,12 +30,13 @@ var courses = [
     {
         name: "PYTHON ADOLESCENTES",
         icon: "../assets/icons/icon-python.png",
-        class: "item-python",
         url:"./pages/course.html?course=py-teens",
-        description: "Python es un lenguaje de alto nivel e interpretado. Una de sus caracteristicas es su facilidad de aprendizaje, lo que lo convierte en el lenguaje ideal para aquellos que recien esten comenzando a programar.",
+        description: {
+            p1: "Python es un lenguaje de alto nivel e interpretado. Una de sus caracteristicas es su facilidad de aprendizaje, lo que lo convierte en el lenguaje ideal para aquellos que recien esten comenzando a programar."
+        },
         courseRequirements: {
             "Edad requerida": "12 a 16 años",
-            "Duracion del curso": "2 clases por semana (8 clases)",
+            "Duracion del curso": "8 clases",
             "Conocimientos previos": "no es necesario"
         },
         technicalRequirements: {
@@ -48,12 +47,13 @@ var courses = [
     {
         name: "PYTHON JOVENES",
         icon: "../assets/icons/icon-python.png",
-        class: "item-python",
         url:"./pages/course.html?course=py-young",
-        description: "Python es un lenguaje de alto nivel e interpretado. Una de sus caracteristicas es su facilidad de aprendizaje, lo que lo convierte en el lenguaje ideal para aquellos que recien esten comenzando a programar.",
+        description: {
+            p1: "Python es un lenguaje de alto nivel e interpretado. Una de sus caracteristicas es su facilidad de aprendizaje, lo que lo convierte en el lenguaje ideal para aquellos que recien esten comenzando a programar."
+        },
         courseRequirements: {
             "Edad requerida": "+17 años",
-            "Duracion del curso": "2 clases por semana (8 clases)",
+            "Duracion del curso": "8 clases",
             "Conocimientos previos": "no es necesario"
         },
         technicalRequirements: {
@@ -64,13 +64,14 @@ var courses = [
     {
         name: "JAVA",
         icon: "../assets/icons/icon-java.png",
-        class: "item-java",
         url:"./pages/course.html?course=prog-java",
-        description: "sarasa",
+        description: {
+            p1: "Java es un lenguaje de programación de propósito general, concurrente, orientado a objetos que fue diseñado específicamente para tener tan pocas dependencias de implementación como fuera posible."
+        },
         courseRequirements: {
-            "Edad requerida": "5",
-            "Duracion del curso": "iiii",
-            "Conocimientos previos": "gggg"
+            "Edad requerida": "+17 años",
+            "Duracion del curso": "8 clases",
+            "Conocimientos previos": "no es necesario"
         },
         technicalRequirements: {
             req1: "Buena conexión a internet",
@@ -84,7 +85,6 @@ var know = [
     {
         name: "QUIENES SOMOS",
         icon: "../assets/icons/logo-negro.png",
-        class: "item-about-us",
         url:"./pages/about.html"
     }
 ];
@@ -93,13 +93,11 @@ var contact = [
     {
         name: "WHATSAPP",
         icon: "../assets/icons/icon-wp.svg",
-        class: "item-wp",
         url: "http://wa.me/+5493512445290"
     },
     {
         name: "INSTAGRAM",
         icon: "../assets/icons/icon-ig.png",
-        class: "item-ig",
         url: "https://www.instagram.com/codigo.argentino/"
     }
 ]

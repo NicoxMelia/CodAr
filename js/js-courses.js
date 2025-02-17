@@ -1,10 +1,8 @@
 import {courses, know, contact} from './json-courses.js';
 
-function makeItem(itemType, item){
+function makeItem(item){
     var itemContainer = document.createElement('a');
-    //itemContainer.href = item.url;
-    itemContainer.classList.add(itemType);
-    itemContainer.classList.add(item.class);
+    itemContainer.classList.add("item");
     var itemTop = document.createElement('div');
     itemTop.classList.add('item-img-container');
     var itemBottom = document.createElement('div');
@@ -24,12 +22,12 @@ function makeItem(itemType, item){
     
 }
 
-function makeList(itemType, parent, itemsList){
+function makeList(parent, itemsList){
     var container = document.createElement('article');
     container.classList.add(parent + '-container');
     document.querySelector('.' + parent + '-section').appendChild(container);
     for(var item of itemsList){
-        var itemContainer = makeItem(itemType, item);
+        var itemContainer = makeItem(item);
         itemContainer.href = item.url;
         document.querySelector('.' + parent + '-container').appendChild(itemContainer);
     }
@@ -38,16 +36,11 @@ function makeList(itemType, parent, itemsList){
 
 
 window.addEventListener('load', function() {
-    //this.document.querySelector('.courses-section').appendChild(makeDesktopItem("item-python", "../assets/icons/python-icon.png", "PYTHON ADOLESCENTES"));
-    if(this.window.innerWidth < 660){
-        makeList("item-container-mobile", "courses", courses);
-        makeList("item-container-mobile", "know", know);
-        makeList("item-container-mobile", "contact", contact);
-    }else{
-        makeList("item-container-desktop", "courses", courses);
-        makeList("item-container-desktop", "know", know);
-        makeList("item-container-desktop", "contact", contact);
-    }
+    makeList("courses", courses);
+    makeList("know", know);
+    makeList("contact", contact);
 });
+
+//660px hacia abajo - version mobile
 
 export{makeItem};
